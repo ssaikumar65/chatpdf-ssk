@@ -1,11 +1,11 @@
+import { getContext } from "@/lib/context";
+import { db } from "@/lib/db";
+import { messages as _messages, chats } from "@/lib/schema";
 import { OpenAIStream, StreamingTextResponse } from "ai";
+import { Message } from "ai/react";
+import { eq } from "drizzle-orm";
 import { NextResponse } from "next/server";
 import { Configuration, OpenAIApi } from "openai-edge";
-import { getContext } from "@/lib/context";
-import { chats, messages as _messages } from "@/lib/schema";
-import { db } from "@/lib/db";
-import { eq } from "drizzle-orm";
-import { Message } from "ai/react";
 
 export const runtime = "edge";
 

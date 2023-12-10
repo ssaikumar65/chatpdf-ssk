@@ -1,9 +1,9 @@
+import Providers from "@/components/Providers";
+import { ClerkProvider } from "@clerk/nextjs";
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
-import "./globals.css";
-import { ClerkProvider } from "@clerk/nextjs";
-import Providers from "@/components/Providers";
 import { Toaster } from "sonner";
+import "./globals.css";
 
 const nunito = Nunito({ subsets: ["latin"] });
 

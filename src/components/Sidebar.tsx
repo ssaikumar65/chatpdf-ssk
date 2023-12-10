@@ -1,9 +1,7 @@
-"use client";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { MessageCircle, PlusCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { useState } from "react";
 import { TChat } from "@/lib/schema";
 
 type Props = {
@@ -12,8 +10,6 @@ type Props = {
 };
 
 const Sidebar = ({ chats, chatId }: Props) => {
-  const [loading, setLoading] = useState(false);
-
   return (
     <div className="flex gap-4 flex-col w-full h-full p-4">
       <Link href="/">
