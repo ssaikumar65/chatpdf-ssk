@@ -1,1 +1,1 @@
-# ChatPDF-SSK
+# ChatPDF By SSK
